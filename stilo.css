@@ -1,4 +1,40 @@
-.container-fluid{
-    background-color: black;
-    color: aliceblue; !important
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.row{
+    width: 100%;
+}
+
+.navbar-brand{
+    width: 18%;!important
+}
+
+
+.nav-item{
+    width: 90%;!important;
+}
+
+
+h4{
+    color: aliceblue;!important
+}
+
+
+body{
+    background-color: rgb(31, 30, 30);
+}
+
+header{
+    color: black;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin: 6%;!important
 }
