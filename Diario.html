@@ -11,73 +11,125 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"  >
-            <div class="container-fluid" >
-              <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 87%;"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" style="color: #ffffff;">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item" >
-                    <a class="nav-link " href="index.html">Corporação</a>
-                  </li>
-                  <li class="nav-item" >
-                    <a class="nav-link " href="SCP.html">SCP's</a>
-                  </li>
-                
-                  <li class="nav-item" >
-                    <a class="nav-link " href="Sítios.html">Link</a>
-                  </li>
-                  <li class="nav-item" >
-                    <a class="nav-link " href="Diario.html">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Link
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="index.html"><img class="img-thumbnail"src="img/logo.png" style="width: 87%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" style="color: #ffffff;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item" >
+                <a class="nav-link   " href="index.html">Corporação</a>
+              </li>
+         
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SCP's
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="safe.html">Safe</a></li>
+                  <li><a class="dropdown-item1" href="euclid.html">Euclid</a></li>
+                  <li><a class="dropdown-item2" href="keter.html">Keter</a></li>
+                  <li><a class="dropdown-item3" href="thaumiel.html">Thaumiel</a></li>
+                  <li><a class="dropdown-item4" href="explained.html">Explained</a></li>
+                  <li><a class="dropdown-item5" href="neutralized.html">Neutralized</a></li>
+                  <li><a class="dropdown-item6" href="unknow.html">Unknow</a></li>
+                  <li><a class="dropdown-item7" href="appolyon.html">Appolyon</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+              </li>
+
+            
+              <li class="nav-item" >
+                <a class="nav-link " href="Sítios.html">Sítios</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link active " href="Diario.html">Diario</a>
+              </li>
+              
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     
+  
+      
+    </style>
+  </head>
+  <body>
     <main>
-      <div class="row">
-        <div class="col-4">
-          <div id="list-example" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+      
+      <div class="containerc">
+         <div class="bord">
+            <div class="border"><!-- "Tela inicial" -->
+                <div id="home" class="page active">
+                  <div class="navbar " ">
+                    <h5 class="m-2"s>Menu</h5>
+                  </div>
+                  <div class="p-3">
+                    <button class="btn " onclick="navigateTo('page1')">Ir para Página 1</button>
+                    <button class="btn " onclick="navigateTo('page2')">Ir para Página 2</button>
+                    <button class="btn" onclick="navigateTo('page3')">Ir para Página 3</button>
+                  </div>
+                </div>
+              
+                <!-- Página 1 -->
+                <div id="page1" class="page">
+                  <div class="navbar bg-dark p-2">
+                    <button class="btnvt " onclick="navigateTo('home')">Voltar</button>
+                    <h5 class="m-0 d-inline-block">Página 1</h5>
+                  </div>
+                  <div class="p-3">
+                    <h3>Conteúdo da Página 1</h3>
+                    <p>Essa é a primeira página simulada.</p>
+                  </div>
+                </div>
+              
+                <!-- Página 2 -->
+                <div id="page2" class="page">
+                  <div class="navbar bg-dark p-2">
+                    <button class="btnvt" onclick="navigateTo('home')">Voltar</button>
+                    <h5 class="m-0 d-inline-block">Página 2</h5>
+                  </div>
+                  <div class="p-3">
+                    <h3>Conteúdo da Página 2</h3>
+                    <p>Essa é a segunda página simulada. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas voluptate, ipsam natus qui eum, ratione recusandae aperiam harum dolor nulla deserunt et accusantium, hic velit saepe magnam quae esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio asperiores suscipit maiores repellendus nesciunt obcaecati, reprehenderit eaque blanditiis eius minima impedit quidem fugiat molestiae et dolore soluta cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis nulla sed architecto at molestias alias, ad inventore totam et saepe fuga reiciendis velit quidem tenetur debitis quo maxime eos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi quos ab culpa et quod voluptates libero iusto sapiente exercitationem eaque esse, consectetur enim odit? Modi consequatur odit explicabo facilis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, nam. At minus consequatur saepe enim, aliquam dolores velit nesciunt debitis sint corporis excepturi, sapiente fuga, consequuntur reprehenderit dignissimos unde ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque pariatur facere temporibus, beatae fugit expedita odit tempore consequuntur exercitationem optio nemo totam tempora iusto et laborum tenetur voluptatibus obcaecati ipsum. lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique cum quasi laudantium explicabo. Amet quaerat magni praesentium nisi magnam beatae incidunt omnis suscipit voluptatibus exercitationem, natus enim dolorum sint? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore excepturi error veniam, consectetur quisquam quis voluptas asperiores provident sint. Vel accusantium distinctio deleniti corrupti nostrum molestias a aperiam rem repellat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga repellendus magnam placeat mollitia suscipit, libero deserunt? Dicta possimus dignissimos quibusdam veniam eveniet esse, eum animi facilis laborum illo error mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias, quam dolorem rem quis nam magnam libero sapiente ratione sint dolores atque earum pariatur eum non dolorum, odit cupiditate error! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit id pariatur consequuntur eveniet ratione fuga. Assumenda, voluptates? Soluta vel corrupti voluptates. Natus odit quae dicta unde ipsum ipsam debitis? Eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint dignissimos quia sed eaque ut minus illum fugit quam? Eligendi veritatis voluptatibus ducimus sunt dolorum veniam atque ex eius. Provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam repellendus cupiditate commodi delectus praesentium hic distinctio. Nemo, praesentium. Deserunt corporis dignissimos excepturi porro nobis saepe numquam est sed adipisci? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, consequuntur fuga quae voluptatum nesciunt, blanditiis nemo esse dolor itaque adipisci ut quo cupiditate quisquam deserunt totam debitis numquam! Ratione, labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nemo, et perspiciatis debitis ea consequatur doloribus error iste expedita quo, voluptatem cum esse cupiditate saepe molestiae numquam consequuntur ipsam quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate assumenda iste modi quae sapiente! Cupiditate ipsum culpa voluptas at labore aliquid? Sed iste tempore commodi molestias harum exercitationem sit labore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, quos eligendi? At repudiandae nam inventore quis hic, ullam minus tenetur nihil consectetur eum optio ipsum, dignissimos quam quo voluptatem ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, reprehenderit voluptatem. Vel repudiandae quasi tenetur quas rem nesciunt veniam sint voluptate numquam hic repellendus vero ratione, expedita ut! Culpa, molestias.</p>
+                  </div>
+                </div>
+              
+                <!-- Página 3 -->
+                <div id="page3" class="page">
+                  <div class="navbar bg-dark p-2">
+                    <button class="btnvt " onclick="navigateTo('home')">Voltar</button>
+                    <h5 class="m-0 d-inline-block">Página 3</h5>
+                  </div>
+                  <div class="p-3">
+                    <h3>Conteúdo da Página 3</h3>
+                    <p>Essa é a terceira página simulada.</p>
+                  </div>
+                </div>
+            </div>
           </div>
-        </div>
-        <div class="col-8">
-          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-            <h4 id="list-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit suscipit aliquid aliquam! Rem recusandae amet necessitatibus ipsum provident? Itaque et harum reiciendis architecto eveniet distinctio sint nihil incidunt enim!</h4>
-            <p>...</p>
-            <h4 id="list-item-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est blanditiis amet praesentium, iusto quisquam ipsum iste ut molestias sunt. Sunt, id quasi aut sequi reiciendis beatae rerum deserunt. Odio, excepturi.</h4>
-            <p>...</p>
-            <h4 id="list-item-3">Item 3</h4>
-            <p>...</p>
-            <h4 id="list-item-4">Item 4</h4>
-            <p>...</p>
-          </div>
-        </div>
+
+          
       </div>
+        
     </main>
+    <script>
+      function navigateTo(pageId) {
+        // Esconde todas as páginas
+        document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+        // Mostra apenas a página selecionada
+        document.getElementById(pageId).classList.add('active');
+      }
+    </script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
 
 </body>

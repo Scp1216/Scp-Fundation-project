@@ -1,6 +1,6 @@
 
 main{
-    width: 80%;
+    width: 86%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
@@ -36,5 +36,272 @@ header{
 h1{
     color: aliceblue;
     text-align: center;
-    margin: 6%;!important
+    margin-bottom: 2%;
+    font-size: 4rem
 }
+
+.m-0,.m-2{
+  color: #027a08;
+
+}
+
+.p-3{
+  color: #00af17;
+}
+
+
+
+.file-folder {
+  width:55%;
+  margin-left: 10%;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color:transparent;
+}
+
+.tabs {
+  display: flex;
+ margin-left: 3px;
+  background-color: transparent;
+  width: 45%;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  border-radius: 30px 30px 0 0; /* Arredonda apenas o topo */
+  color: #333;
+  font-weight: bold;
+  border-right: 2px solid #3f2f05;
+  cursor: pointer;
+  background-color: rgb(136, 111, 2);
+ ;
+  
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  background-color: #a59747;
+}
+
+.tab.active {
+  background-color: #d4c820;
+  color: rgb(22, 13, 13);
+}
+
+.content {
+  padding: 20px;
+  display: none;
+  border-radius: 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 50rem;
+}
+
+/* Mostra o conteúdo ativo */
+.content.active {
+  display: block;
+  background-color: #d4c220;
+}
+
+.cardl{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+
+
+.card{
+  height: fit-content;
+  margin-bottom: 5%;
+    position: relative;
+   background-color: #d6d6d6;
+    
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+  }
+
+
+
+#safe{
+  color: green;
+  font-weight: bold;
+}
+
+
+#euclid{
+  color:rgb(202, 108, 0);
+  font-weight: bold;
+}
+
+#keter{
+  color: rgb(129, 0, 0);
+  font-weight: bold;
+}
+
+#thaumiel{
+  color: rgb(9, 100, 173);
+  font-weight: bold;
+}
+
+#explained{
+  color: #e2cc05;
+  font-weight: bold;
+}
+
+#neutralized{
+  color: #868686;
+  font-weight: bold;
+}
+
+#unknow{
+  color: rgb(84, 6, 129);
+  font-weight: bold;
+}
+
+#appolyon{
+  color: #000000;
+ 
+ -webkit-text-stroke: 1px;
+ -webkit-text-stroke-color: aliceblue;
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.card-hover {
+  display: none;
+  position: absolute;
+  top: 110%; /* Ajusta a posição do card em relação ao SVG */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 18rem;
+}
+
+.hover-container:hover .card-hover {
+  display: block;
+}
+
+
+.containermap{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:100vh ;
+  width: 85%;
+  
+}
+
+.container mt-5{
+  width: 5%;
+
+}
+
+.bord{
+  clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+ background-color: #005704;
+ width: 100%;
+ height: 100%;
+ 
+
+}
+.border{ 
+  background-color: rgb(12, 12, 12);
+   border: 5px;
+   clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+  padding: 2%;
+ width: 99%;
+ height: 99%;
+ margin: auto;
+ 
+
+
+  
+}
+
+
+.containerc {
+  max-width: 43%;
+  height: 50rem;
+  margin: 50px auto;
+  border: 1px solid #426d44;
+  
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+ padding: 2%;
+ border-radius: 30px;
+
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.page{
+  overflow-y: auto; /* Permite rolagem vertical */
+  max-height: calc(100vh - 60px); /* Ajusta o tamanho máximo para caber na tela */
+}
+
+.container::after {
+  position: absolute;
+  content: "";
+  top: -22px;
+  left: 0px;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.76);
+  filter: blur(34.5px);
+  background: #8ef72b;
+  background: var(--background);
+  transition: opacity 0.5s;}
+
+  .btn{
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    color: #027a08;
+   margin: 2px;
+   margin-bottom: 3%;
+   width: 95%;
+    border-color:green;!important
+  }
+
+
+
+
+
+
+  .btn:hover{
+    background-color:var(--bs-success);;
+    color: #d6d6d6;!important
+  }
+
+  .btnvt{
+      background-color: #000000;
+    color: #027a08;
+  }

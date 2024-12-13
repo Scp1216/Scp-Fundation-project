@@ -20,11 +20,11 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item" >
-                <a class="nav-link  active " href="index.html">Corporação</a>
+                <a class="nav-link  " href="index.html">Corporação</a>
               </li>
          
 
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown " >
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   SCP's
                 </a>
@@ -42,7 +42,7 @@
 
             
               <li class="nav-item" >
-                <a class="nav-link " href="Sítios.html">Sítios</a>
+                <a class="nav-link active " href="Sítios.html">Sítios</a>
               </li>
               <li class="nav-item" >
                 <a class="nav-link " href="Diario.html">Diario</a>
@@ -60,33 +60,38 @@
     </header>
     
     <main>
-      <h1>Corporação</h1>
-      <div class="row">
-        <div class="col-4">
-          <div id="list-example" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">Corporação SCP</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Objetivo</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Estrutura</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">?</a>
+      <h1>Ficha da Anomalía</h1>
+      <div class="cardl">
+        <div class="card" style="width: 18rem; margin-left: auto;margin-right: auto;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
-        <div class="col-8">
-          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-            <img class="img-fluid" src="img/foto1.png" alt="">
-           
-            <h4 id="list-item-1">A Fundação SCP é um site de escrita colaborativa, no estilo mocumentário, que registra as atividades da Fundação SCP ("Secure, Contain, Protect"), do inglês, ou "Assegurar, Conter, Proteger" em português), uma organização responsável pela detecção e contenção de entidades, lugares e objetos que desafiam as leis da natureza chamados de "SCP" ("Procedimentos Especiais de Contenção", em tradução livre)</h4>
-            
-            <h4 id="list-item-2">.</h4>
-             <p>
-            <h4 id="list-item-3">Item 3</h4>
-            <p>...</p>
-            <h4 id="list-item-4">Item 4</h4>
-            <p>...</p>
+        <div class="file-folder">
+          <div class="tabs">
+            <a href="#arquivo1" class="tab">Arquivo 1</a>
+            <a href="#arquivo2" class="tab">Arquivo 2</a>
+            <a href="#arquivo3" class="tab">Arquivo 3</a>
+          </div>
+          <div class="content" id="arquivo1">
+            <h2>Conteúdo do Arquivo 1</h2>
+            <p>Este é o conteúdo do arquivo 1. Aqui você pode adicionar texto, imagens ou qualquer outro elemento HTML.</p>
+          </div>
+          <div class="content" id="arquivo2">
+            <h2>Conteúdo do Arquivo 2</h2>
+            <p>Este é o conteúdo do arquivo 2. Clique nas outras abas para alternar entre os arquivos.</p>
+          </div>
+          <div class="content" id="arquivo3">
+            <h2>Conteúdo do Arquivo 3</h2>
+            <p>Este é o conteúdo do arquivo 3. Experimente navegar pelas outras abas para ver mais.</p>
           </div>
         </div>
       </div>
+      
     </main>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/script.js"></script>
 
 </body>
 </html>
